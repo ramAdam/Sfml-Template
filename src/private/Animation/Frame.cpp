@@ -1,5 +1,4 @@
-#include "Frame.h"
-#include <iostream>
+#include "Animation/Frame.h"
 
 Frame::Frame()
 {
@@ -8,5 +7,5 @@ Frame::Frame()
 
 void Frame::draw()
 {
-    std::cout << "Drawing frame...\n";
+    // draw implementation
 }

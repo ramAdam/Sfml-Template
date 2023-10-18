@@ -20,6 +20,7 @@ int main()
     text.setPosition(250, 250);
 
     frame.draw();
+
     while (window.isOpen())
     {
         sf::Event event;

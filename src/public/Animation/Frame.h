@@ -1,11 +1,11 @@
-#ifndef FRAME_H
-#define FRAME_H
+// #ifndef FRAME_H
+// #define FRAME_H
 
-class UFrame
+class Frame
 {
 public:
-    UFrame();     // Constructor
+    Frame();     // Constructor
     void draw(); // Member function to draw the frame
 };
 
-#endif // FRAME_H
+// #endif // FRAME_H

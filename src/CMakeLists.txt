@@ -1,11 +1,13 @@
 # Add the executable
-add_executable(${PROJECT_NAME} private/Game.cpp)
+add_executable(${PROJECT_NAME} private/Game.cpp private/Animation/Frame.cpp)
 
 # Include public headers
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/public)
 
 # Link SFML
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics sfml-window sfml-system)
+
+
 
 # Copy the Font directory to the build directory
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
