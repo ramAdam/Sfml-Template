@@ -1,5 +1,8 @@
+file(GLOB ANIMATION_SOURCES "private/Animation/*.cpp")
+
+
 # Add the executable
-add_executable(${PROJECT_NAME} private/Game.cpp private/Animation/Frame.cpp)
+add_executable(${PROJECT_NAME} private/Game.cpp  ${ANIMATION_SOURCES})
 
 # Include public headers
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/public)

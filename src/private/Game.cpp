@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include "../public/Animation/Frame.h"
+#include "Animation/Frame.h"
 
 int main()
 {
