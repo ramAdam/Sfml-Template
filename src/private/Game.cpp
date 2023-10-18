@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "../public/Animation/Frame.h"
 
 int main()
 {
@@ -7,6 +8,8 @@ int main()
 
     // Create a text object
     sf::Font font;
+    Frame frame;
+
     if (!font.loadFromFile("arial/arial.ttf")) // You need to have a font file (arial.ttf) in the same directory as your source code
     {
         return EXIT_FAILURE;
@@ -16,6 +19,7 @@ int main()
     text.setFillColor(sf::Color::White);
     text.setPosition(250, 250);
 
+    frame.draw();
     while (window.isOpen())
     {
         sf::Event event;
